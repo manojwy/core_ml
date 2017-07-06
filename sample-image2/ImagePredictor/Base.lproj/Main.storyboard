@@ -24,11 +24,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-k7-BYC">
                                 <rect key="frame" x="0.0" y="400" width="375" height="203"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-8r-bnY">
-                                        <rect key="frame" x="0.0" y="41" width="375" height="75"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LSc-8r-bnY">
+                                        <rect key="frame" x="0.0" y="41" width="375" height="102"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="375" id="XIL-MB-U7N"/>
-                                            <constraint firstAttribute="height" constant="75" id="lSG-75-Sjk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -47,6 +46,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umq-2t-GGT">
                                         <rect key="frame" x="100" y="153" width="175" height="30"/>
                                         <color key="backgroundColor" red="0.17405902628946759" green="0.17796566600460068" blue="0.18968558515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="kyv-IG-fO4"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Pick Image">
                                             <color key="titleColor" red="0.95570645677909882" green="1" blue="0.93762667463401583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,6 +60,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="LSc-8r-bnY" firstAttribute="top" secondItem="aXq-xf-a9k" secondAttribute="bottom" constant="1" id="Ea3-my-TWg"/>
+                                    <constraint firstItem="Umq-2t-GGT" firstAttribute="top" secondItem="LSc-8r-bnY" secondAttribute="bottom" constant="10" id="FeD-4g-qWL"/>
                                     <constraint firstAttribute="bottom" secondItem="Umq-2t-GGT" secondAttribute="bottom" constant="20" id="Kkg-bC-PPt"/>
                                     <constraint firstItem="LSc-8r-bnY" firstAttribute="leading" secondItem="YeV-k7-BYC" secondAttribute="leading" id="Sl9-KE-Tdq"/>
                                     <constraint firstAttribute="trailing" secondItem="aXq-xf-a9k" secondAttribute="trailing" id="WSJ-OE-bG2"/>

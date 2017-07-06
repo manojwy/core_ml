@@ -73,7 +73,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 				return;
 			}
 			
-			var result = "" + modelResult.classLabel
+			var result = "Resnet50: ." + modelResult.classLabel
 			
 			let model2 = GoogLeNetPlaces()
 			guard let modelResult2 = try? model2.prediction(sceneImage: buffer!) else {
@@ -82,7 +82,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 				return;
 			}
 			
-			result = result + "\n" + modelResult2.sceneLabel
+			result = result + "\nGoogLeNet: " + modelResult2.sceneLabel
 			
 			let model3 = Inceptionv3()
 			let buffer3 = self.getCVPixelBuffer(from:selectedImage, width:299, height:299);
@@ -92,7 +92,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 				return;
 			}
 			self.imageCaption.text = "Predicted Image"
-			result = result + "\n" + modelResult3.classLabel
+			result = result + "\nInceptionv3: " + modelResult3.classLabel
 			
 			let model4 = VGG16()
 			guard let modelResult4 = try? model4.prediction(image: buffer!) else {
@@ -101,7 +101,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 				return;
 			}
 			self.imageCaption.text = "Predicted Image"
-			result = result + "\n" + modelResult4.classLabel
+			result = result + "\nVGG16: " + modelResult4.classLabel
 			
 			self.imageNameLabel.text = result
 			
